@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>신일비즈니스고등학교 학교소개 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F5F5;padding:2rem 1rem;}
+.w{font-family:'Noto Sans KR',sans-serif;max-width:820px;margin:0 auto;background:#fff;color:#1a1a1a;padding-bottom:2rem;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.10);}
+.hdr{background:#E85A0A;padding:2rem 2rem 1.6rem;position:relative;overflow:hidden;}
+.hdr::after{content:'';position:absolute;right:-30px;top:-30px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.07);}
+.hdr-badge{display:inline-block;background:rgba(255,255,255,0.18);color:#fff;font-size:10px;letter-spacing:.1em;padding:3px 12px;border-radius:20px;margin-bottom:10px;}
+.hdr-name{font-size:26px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:2px;}
+.hdr-en{font-size:12px;color:rgba(255,255,255,.75);margin-bottom:1.4rem;}
+.hdr-nums{display:flex;gap:0;flex-wrap:wrap;}
+.hdr-stat{text-align:center;padding:0 20px 0 0;}
+.hdr-stat+.hdr-stat{border-left:1px solid rgba(255,255,255,.25);padding-left:20px;}
+.hdr-n{font-size:20px;font-weight:700;color:#fff;line-height:1;}
+.hdr-l{font-size:10px;color:rgba(255,255,255,.75);margin-top:3px;}
+.sec{padding:1.4rem 2rem 0;}
+.sec-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#E85A0A;margin-bottom:1rem;}
+.sec-title::before{content:'';display:block;width:3px;height:16px;background:#E85A0A;border-radius:2px;}
+.dl{height:1px;background:#F0F0F0;margin:1.4rem 2rem 0;}
+.career-top{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px;}
+.ct-card{background:#F9F9F9;border:1px solid #EDEDED;border-radius:10px;padding:14px 10px;text-align:center;}
+.ct-card.hi{background:#FFF2EA;border-color:#F5C8A0;}
+.ct-n{font-size:22px;font-weight:700;color:#E85A0A;line-height:1;}
+.ct-n.bl{color:#2879D8;}
+.ct-l{font-size:11px;color:#888;margin-top:4px;}
+.ct-sub{font-size:10px;color:#bbb;margin-top:2px;}
+.career-bars{background:#FFF8F4;border:1px solid #F5C8A0;border-radius:12px;padding:16px 18px;}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.bar-row:last-child{margin-bottom:0;}
+.bar-label{font-size:12px;color:#555;width:54px;flex-shrink:0;text-align:right;}
+.bar-track{flex:1;background:#EEE;border-radius:20px;height:9px;overflow:hidden;}
+.bar-fill{height:9px;border-radius:20px;}
+.bar-pct{font-size:12px;font-weight:700;width:40px;flex-shrink:0;}
+.emp-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
+.emp-card{background:#F9F9F9;border:1px solid #EDEDED;border-radius:10px;padding:14px 16px;}
+.emp-label{font-size:11px;color:#888;margin-bottom:6px;}
+.emp-num{font-size:24px;font-weight:700;color:#E85A0A;line-height:1;}
+.emp-sub{font-size:11px;color:#999;margin-top:3px;}
+.emp-bar-wrap{background:#EEE;border-radius:20px;height:8px;overflow:hidden;margin:8px 0 4px;}
+.emp-bar{height:8px;border-radius:20px;background:linear-gradient(90deg,#E85A0A,#F5A04A);}
+.best-wrap{background:#FFF2EA;border:1px solid #F5C8A0;border-radius:10px;padding:12px 16px;}
+.best-title{font-size:11px;color:#C04A05;font-weight:700;margin-bottom:8px;}
+.best-list{display:flex;flex-wrap:wrap;gap:6px;}
+.best-tag{background:#fff;border:1px solid #F5C8A0;border-radius:20px;font-size:11px;color:#C04A05;padding:3px 10px;}
+.cert-row{display:flex;align-items:center;gap:12px;background:#FFF8F4;border:1px solid #F5C8A0;border-radius:10px;padding:12px 16px;margin-top:10px;}
+.cert-icon{width:36px;height:36px;background:#E85A0A;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;flex-shrink:0;}
+.cert-n{font-size:20px;font-weight:700;color:#E85A0A;}
+.cert-l{font-size:11px;color:#888;margin-top:1px;}
+.univ-top{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
+.univ-card{border-radius:10px;padding:14px 16px;}
+.univ-card.u4{background:#EAF3FF;border:1px solid #A8CBF5;}
+.univ-card.u23{background:#F0FFF4;border:1px solid #A0DDB8;}
+.univ-label{font-size:11px;color:#666;margin-bottom:6px;}
+.univ-num{font-size:22px;font-weight:700;line-height:1;}
+.u4c{color:#2879D8;}
+.u23c{color:#2DAA60;}
+.univ-sub{font-size:10px;color:#999;margin-top:3px;}
+.dept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.dept-card{border-radius:10px;padding:12px 14px;border:1px solid;}
+.dept-card.d1,.dept-card.d2{background:#FFF2EA;border-color:#F5C8A0;}
+.dept-card.d3,.dept-card.d4{background:#EAF3FF;border-color:#A8CBF5;}
+.dept-card.d5{background:#F0FFF4;border-color:#A0DDB8;}
+.dept-name{font-size:12px;font-weight:700;color:#1a1a1a;margin-bottom:4px;}
+.dept-score{font-size:11px;color:#888;}
+.dept-score span{font-weight:700;color:#E85A0A;}
+.dept-new{background:#FFFBF0;border:1.5px dashed #E8AA0A;border-radius:10px;padding:12px 16px;margin-top:8px;display:flex;align-items:center;gap:12px;}
+.dept-new-badge{background:#E8AA0A;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;flex-shrink:0;white-space:nowrap;}
+.dept-new-text{font-size:12px;color:#555;line-height:1.5;}
+.dept-new-text strong{color:#B07A00;}
+.biz-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.biz-card{border-radius:10px;padding:13px 15px;border-left:3px solid;}
+.biz-card.b1{background:#FFF2EA;border-color:#E85A0A;}
+.biz-card.b2{background:#EAF3FF;border-color:#2879D8;}
+.biz-card.b3{background:#F0FFF4;border-color:#2DAA60;}
+.biz-card.b4{background:#FFFBF0;border-color:#E8AA0A;}
+.biz-t{font-size:12px;font-weight:700;margin-bottom:6px;color:#1a1a1a;}
+.biz-ul{list-style:none;}
+.biz-ul li{font-size:11px;color:#555;padding:2px 0;display:flex;gap:5px;}
+.biz-ul li::before{content:'·';color:#E85A0A;font-weight:700;flex-shrink:0;}
+.footer{margin:1.4rem 2rem 0;background:#FFF2EA;border:1px solid #F5C8A0;border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:14px;}
+.footer-logo{width:40px;height:40px;background:#E85A0A;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;text-align:center;line-height:1.3;flex-shrink:0;}
+.footer-t{font-size:12px;color:#777;line-height:1.7;}
+.footer-t strong{color:#E85A0A;}
+.note{font-size:10px;color:#ccc;text-align:right;padding:8px 2rem 0;}
+.toggle-btn{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:10px;padding:9px 14px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;transition:background .15s;border:1.5px solid;}
+.toggle-btn.orange{border-color:#F5C8A0;background:#fff;color:#E85A0A;}
+.toggle-btn.orange:hover{background:#FFF2EA;}
+.toggle-btn.blue{border-color:#A8CBF5;background:#fff;color:#2879D8;}
+.toggle-btn.blue:hover{background:#EAF3FF;}
+.toggle-btn .arr{font-size:10px;transition:transform .2s;display:inline-block;}
+.slide-panel{overflow:hidden;max-height:0;transition:max-height .35s ease;border-radius:10px;margin-top:0;}
+.slide-panel.open{max-height:2000px;margin-top:10px;}
+.panel-inner{border:1px solid #EDEDED;border-radius:10px;overflow:hidden;}
+.dtable{width:100%;border-collapse:collapse;font-size:11.5px;}
+.dtable th{padding:8px 10px;background:#F9F9F9;border-bottom:1px solid #EDEDED;color:#555;font-weight:700;text-align:left;}
+.dtable td{padding:7px 10px;border-bottom:1px solid #F5F5F5;color:#333;}
+.dtable tr:last-child td{border-bottom:none;}
+.dtable tr:hover td{background:#FAFAFA;}
+.sum-row td{background:#FFF2EA;font-weight:700;color:#C04A05;}
+.tab-bar{display:flex;gap:6px;padding:10px 12px;background:#F9F9F9;border-bottom:1px solid #EDEDED;}
+.tb{flex:1;padding:7px;border:1.5px solid #EDEDED;border-radius:7px;background:#fff;font-size:12px;font-weight:700;cursor:pointer;color:#888;text-align:center;transition:all .15s;}
+.tb.a4{background:#EAF3FF;border-color:#A8CBF5;color:#2879D8;}
+.tb.a23{background:#F0FFF4;border-color:#A0DDB8;color:#2DAA60;}
+.tc{display:none;padding:10px 12px;}
+.tc.show{display:block;}
+@media print {
+  body{background:#fff;padding:0;}
+  .w{box-shadow:none;border-radius:0;}
+  .toggle-btn{display:none;}
+  .slide-panel{max-height:none!important;margin-top:10px!important;}
+  .panel-inner{border:1px solid #EDEDED;}
+  .tc{display:block!important;}
+  .tab-bar{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="hdr">
+  <div class="hdr-badge">담임장학 방문 자료 · 2026. 4.</div>
+  <div class="hdr-name">신일비즈니스고등학교</div>
+  <div class="hdr-en">Shinil Business High School · 경기도 고양시 일산서구 킨텍스로 452</div>
+  <div class="hdr-nums">
+    <div class="hdr-stat"><div class="hdr-n">1996</div><div class="hdr-l">개교</div></div>
+    <div class="hdr-stat"><div class="hdr-n">31회</div><div class="hdr-l">2026 입학</div></div>
+    <div class="hdr-stat"><div class="hdr-n">153명</div><div class="hdr-l">신입생 (8학급)</div></div>
+    <div class="hdr-stat"><div class="hdr-n">10,200명+</div><div class="hdr-l">누적 졸업생</div></div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sec-title">졸업생 진로 현황 (2026년 2월 기준 · 졸업생 147명)</div>
+  <div class="career-top">
+    <div class="ct-card hi"><div class="ct-n">45명</div><div class="ct-l">4년제 진학</div><div class="ct-sub">30.6%</div></div>
+    <div class="ct-card hi"><div class="ct-n bl">33명</div><div class="ct-l">2·3년제 진학</div><div class="ct-sub">22.45%</div></div>
+    <div class="ct-card"><div class="ct-n">35명</div><div class="ct-l">취업</div><div class="ct-sub">23.8%</div></div>
+    <div class="ct-card"><div class="ct-n">34명</div><div class="ct-l">기타</div><div class="ct-sub">23.1%</div></div>
+  </div>
+  <div class="career-bars">
+    <div class="bar-row"><div class="bar-label">4년제</div><div class="bar-track"><div class="bar-fill" style="width:30.6%;background:#E85A0A;"></div></div><div class="bar-pct" style="color:#E85A0A;">30.6%</div></div>
+    <div class="bar-row"><div class="bar-label">2·3년제</div><div class="bar-track"><div class="bar-fill" style="width:22.45%;background:#2879D8;"></div></div><div class="bar-pct" style="color:#2879D8;">22.45%</div></div>
+    <div class="bar-row"><div class="bar-label">취업</div><div class="bar-track"><div class="bar-fill" style="width:23.8%;background:#2DAA60;"></div></div><div class="bar-pct" style="color:#2DAA60;">23.8%</div></div>
+    <div class="bar-row"><div class="bar-label">기타</div><div class="bar-track"><div class="bar-fill" style="width:23.1%;background:#AAA;"></div></div><div class="bar-pct" style="color:#888;">23.1%</div></div>
+  </div>
+</div>
+
+<div class="dl"></div>
+
+<div class="sec">
+  <div class="sec-title">취업 현황 (2025학년도 기준)</div>
+  <div class="emp-grid">
+    <div class="emp-card">
+      <div class="emp-label">취업률</div>
+      <div class="emp-num">23.5%</div>
+      <div class="emp-bar-wrap"><div class="emp-bar" style="width:23.5%;"></div></div>
+      <div class="emp-sub">졸업자 133명 중 취업확정 35명 (2026.1 졸업)</div>
+    </div>
+    <div class="emp-card">
+      <div class="emp-label">현장실습 참여율 (2025학년도)</div>
+      <div class="emp-num" style="color:#555;">42.95%</div>
+      <div class="emp-bar-wrap"><div class="emp-bar" style="width:42.95%;background:linear-gradient(90deg,#555,#999);"></div></div>
+      <div class="emp-sub">직업계고 현장실습 연계 취업 경험 제공</div>
+    </div>
+  </div>
+  <div class="best-wrap">
+    <div class="best-title">우수 취업 사례</div>
+    <div class="best-list">
+      <span class="best-tag">국민연금공단 1명</span>
+      <span class="best-tag">하나은행 1명</span>
+      <span class="best-tag">한국항공보안공사 1명</span>
+      <span class="best-tag">휘닉스평창 1명</span>
+      <span class="best-tag">부사관 2명</span>
+    </div>
+  </div>
+  <div class="cert-row">
+    <div class="cert-icon">🏅</div>
+    <div>
+      <div class="cert-n">87%</div>
+      <div class="cert-l">졸업생 자격증 취득률 — 전문 역량 중심 교육과정 운영 성과</div>
+    </div>
+  </div>
+  <button class="toggle-btn orange" id="empBtn" onclick="tog('empPanel','empBtn','취업처 전체 목록 보기','취업처 전체 목록 닫기')">
+    취업처 전체 목록 보기 <span class="arr">▼</span>
+  </button>
+  <div class="slide-panel" id="empPanel">
+    <div class="panel-inner">
+      <table class="dtable">
+        <thead><tr><th>기업체명</th><th style="text-align:center;width:60px;">인원</th><th>기업체명</th><th style="text-align:center;width:60px;">인원</th></tr></thead>
+        <tbody>
+          <tr><td>국민연금공단</td><td style="text-align:center;font-weight:700;color:#E85A0A;">1</td><td>하나은행</td><td style="text-align:center;font-weight:700;color:#E85A0A;">1</td></tr>
+          <tr><td>한국항공보안</td><td style="text-align:center;font-weight:700;color:#E85A0A;">1</td><td>㈜티이티이타임스퀘어점</td><td style="text-align:center;">1</td></tr>
+          <tr><td>이가자헤어비스</td><td style="text-align:center;">2</td><td>필락시스주식회사</td><td style="text-align:center;">1</td></tr>
+          <tr><td>미앤코스메틱</td><td style="text-align:center;">1</td><td>원진측량설계공사</td><td style="text-align:center;">1</td></tr>
+          <tr><td>주식회사삼목정원에프씨</td><td style="text-align:center;">1</td><td>바쏘옴므</td><td style="text-align:center;">1</td></tr>
+          <tr><td>롯데캐슬아이어린이집</td><td style="text-align:center;">1</td><td>주식회사이화냉동시스템</td><td style="text-align:center;">1</td></tr>
+          <tr><td>디온</td><td style="text-align:center;">1</td><td>럭셔리뷰티</td><td style="text-align:center;">1</td></tr>
+          <tr><td>㈜소노인터내셔널 고양</td><td style="text-align:center;">1</td><td>케이엠딜리버리</td><td style="text-align:center;">1</td></tr>
+          <tr><td>디프레오</td><td style="text-align:center;">1</td><td>휘닉스평창</td><td style="text-align:center;">1</td></tr>
+          <tr><td>부사관</td><td style="text-align:center;">2</td><td>그 외 중소기업</td><td style="text-align:center;">14</td></tr>
+          <tr class="sum-row"><td colspan="3" style="text-align:right;padding-right:16px;">졸업자 133명 중 취업확정자 합계</td><td style="text-align:center;">35명</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="dl"></div>
+
+<div class="sec">
+  <div class="sec-title">대학 진학 현황 (2026년 1월 졸업)</div>
+  <div class="univ-top">
+    <div class="univ-card u4">
+      <div class="univ-label">4년제 대학</div>
+      <div class="univ-num u4c">45명 <span style="font-size:13px;">합격</span></div>
+      <div class="univ-sub">36개 대학 · 경희대, 홍익대, 상명대, 한양대(ERICA) 등</div>
+    </div>
+    <div class="univ-card u23">
+      <div class="univ-label">2·3년제 대학</div>
+      <div class="univ-num u23c">33명 <span style="font-size:13px;">합격</span></div>
+      <div class="univ-sub">41개 대학 · 두원공과대(25명), 혜전대(7명), 명지전문대(4명) 등</div>
+    </div>
+  </div>
+  <button class="toggle-btn blue" id="univBtn" onclick="tog('univPanel','univBtn','합격 대학 전체 목록 보기','합격 대학 전체 목록 닫기')">
+    합격 대학 전체 목록 보기 <span class="arr">▼</span>
+  </button>
+  <div class="slide-panel" id="univPanel">
+    <div class="panel-inner">
+      <div class="tab-bar">
+        <div class="tb a4" id="tb4" onclick="swTab('u4')">4년제 대학 (36개교 · 45명)</div>
+        <div class="tb" id="tb23" onclick="swTab('u23')">2·3년제 대학 (41개교 · 33명)</div>
+      </div>
+      <div class="tc show" id="tc-u4">
+        <table class="dtable">
+          <thead><tr><th>대학명</th><th style="text-align:center;width:70px;">합격인원</th><th>대학명</th><th style="text-align:center;width:70px;">합격인원</th></tr></thead>
+          <tbody id="tb4body"></tbody>
+        </table>
+      </div>
+      <div class="tc" id="tc-u23">
+        <table class="dtable">
+          <thead><tr><th>대학명</th><th style="text-align:center;width:70px;">합격인원</th><th>대학명</th><th style="text-align:center;width:70px;">합격인원</th></tr></thead>
+          <tbody id="tb23body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dl"></div>
+
+<div class="sec">
+  <div class="sec-title">운영 학과 (2026학년도 신입생 내신 기준)</div>
+  <div class="dept-grid">
+    <div class="dept-card d1"><div class="dept-name">스마트IT경영과</div><div class="dept-score">최고 <span>193.16</span> · 평균 136.80</div></div>
+    <div class="dept-card d2"><div class="dept-name">스토어기획과</div><div class="dept-score">최고 <span>160.49</span> · 평균 129.34</div></div>
+    <div class="dept-card d3"><div class="dept-name">시각디자인과</div><div class="dept-score">최고 <span>189.43</span> · 평균 152.19</div></div>
+    <div class="dept-card d4"><div class="dept-name">모션그래픽디자인과</div><div class="dept-score">최고 <span>179.86</span> · 평균 141.45</div></div>
+    <div class="dept-card d5"><div class="dept-name">보건간호과</div><div class="dept-score">최고 <span>182.42</span> · 평균 158.94</div></div>
+  </div>
+  <div class="dept-new">
+    <div class="dept-new-badge">2027 학과재구조화</div>
+    <div class="dept-new-text">스토어기획과 + 모션그래픽디자인과 융합 → <strong>쇼핑라이브커머스과</strong> 신설 예정 (미래 산업 수요 대응 및 교육과정 고도화)</div>
+  </div>
+</div>
+
+<div class="dl"></div>
+
+<div class="sec">
+  <div class="sec-title">주요 사업</div>
+  <div class="biz-grid">
+    <div class="biz-card b1"><div class="biz-t">인성 교육 중심 학교과제 내실화</div><ul class="biz-ul"><li>사제동행 활동을 통한 소통 및 관계 강화</li><li>학생 맞춤형 인성·진로 프로그램 운영</li><li>학교문화 공동체 의식 함양</li></ul></div>
+    <div class="biz-card b2"><div class="biz-t">에듀테크 기반 디지털 교수·학습 환경</div><ul class="biz-ul"><li>수업관리 솔루션 도입으로 효율적 교수 활동 지원</li><li>실시간 학습 데이터 분석 기반 수준별 지원</li><li>교원 에듀테크 역량 강화 연수 운영</li></ul></div>
+    <div class="biz-card b3"><div class="biz-t">최소 성취수준 선도학교 운영</div><ul class="biz-ul"><li>기초학력 미도달 학생 보정 교육과정 운영</li><li>단계별 개인 맞춤 학습 지원 체계 구축</li><li>다양한 보정·심화 성장 과정 제공</li></ul></div>
+    <div class="biz-card b4"><div class="biz-t">학교교육과정 내실화</div><ul class="biz-ul"><li>진로·미래 교육 연계 교과과정 설계</li><li>학생 참여 중심 수업 방법 개선</li><li>지속적 평가 환류를 통한 학업성취 향상</li></ul></div>
+  </div>
+</div>
+
+<div class="footer" style="margin-top:1.4rem;">
+  <div class="footer-logo">신일<br>비즈</div>
+  <div class="footer-t">
+    <strong>신일비즈니스고등학교</strong>는 1996년 개교 이래 비즈니스·디자인·보건 분야 전문 직업인을 양성해왔습니다.<br>
+    졸업생 자격증 취득률 87%의 실력을 바탕으로, 2027학년도 쇼핑라이브커머스과 신설 등 미래 직업교육 혁신을 이어갑니다.<br>
+    <span style="color:#bbb;font-size:10px;">본 자료는 담임장학 방문을 위해 준비된 학교 소개 자료입니다. (2026. 4. 기준)</span>
+  </div>
+</div>
+<div class="note">031-929-2261 · 경기도 고양시 일산서구 킨텍스로 452</div>
+</div>
+
+<script>
+function tog(panelId,btnId,labelOpen,labelClose){
+  var p=document.getElementById(panelId);
+  var b=document.getElementById(btnId);
+  var isOpen=p.classList.contains('open');
+  p.classList.toggle('open');
+  b.querySelector('.arr').style.transform=isOpen?'rotate(0deg)':'rotate(180deg)';
+  b.childNodes[0].textContent=(isOpen?labelOpen:labelClose)+' ';
+}
+function swTab(type){
+  document.getElementById('tc-u4').classList.remove('show');
+  document.getElementById('tc-u23').classList.remove('show');
+  document.getElementById('tb4').className='tb';
+  document.getElementById('tb23').className='tb';
+  document.getElementById('tc-'+type).classList.add('show');
+  document.getElementById(type==='u4'?'tb4':'tb23').className='tb '+(type==='u4'?'a4':'a23');
+}
+var u4=[
+  ['경희대학교',1],['홍익대학교',1],['한국예술종합학교',1],['경기대학교',1],
+  ['가톨릭대학교',1],['가톨릭관동대학교',1],['강원대학교',1],['건양대학교',2],
+  ['경동대학교',5],['광주여자대학교',1],['극동대학교',3],['단국대학교',1],
+  ['대구한의대학교',1],['배재대학교',1],['백석대학교',1],['상명대학교',4],
+  ['상지대학교',2],['서경대학교',1],['서울기독대학교',1],['서울여자대학교',1],
+  ['선문대학교',2],['성공회대학교',1],['세명대학교',12],['수원대학교',1],
+  ['신한대학교',5],['안양대학교',3],['우석대학교',2],['원광대학교',1],
+  ['전주대학교',1],['중부대학교',8],['중원대학교',3],['청주대학교',4],
+  ['초당대학교',1],['한림대학교',1],['한성대학교',1],['한양대(ERICA)',1]
+];
+var u23=[
+  ['동양미래대학교',2],['명지전문대학교',4],['서울예술대학교',1],['숭의여자대학교',2],
+  ['배화여자대학교',1],['한양여자대학교',1],['혜전대학교',7],['인하공업전문대',2],
+  ['경인여자대학교',1],['두원공과대학교',25],['유한대학교',3],['동서울대학교',3],
+  ['삼육보건대학교',2],['용인예술과학대학교',5],['안산대학교',4],['부천대학교',3],
+  ['서영대학교',4],['서일대학교',1],['경기과학기술대학교 외','-'],[' ',' ']
+];
+function buildTable(data,tbodyId,hiColor){
+  var tb=document.getElementById(tbodyId);
+  var html='';
+  for(var i=0;i<data.length;i+=2){
+    var a=data[i]||['',''];
+    var b=data[i+1]||['',''];
+    var aS=a[1]>3?'font-weight:700;color:'+hiColor+';':'';
+    var bS=b[1]>3?'font-weight:700;color:'+hiColor+';':'';
+    html+='<tr>';
+    html+='<td style="padding:7px 10px;border-bottom:1px solid #F5F5F5;">'+a[0]+'</td>';
+    html+='<td style="padding:7px 10px;border-bottom:1px solid #F5F5F5;text-align:center;'+aS+'">'+a[1]+'</td>';
+    html+='<td style="padding:7px 10px;border-bottom:1px solid #F5F5F5;">'+b[0]+'</td>';
+    html+='<td style="padding:7px 10px;border-bottom:1px solid #F5F5F5;text-align:center;'+bS+'">'+b[1]+'</td>';
+    html+='</tr>';
+  }
+  tb.innerHTML=html;
+}
+buildTable(u4,'tb4body','#2879D8');
+buildTable(u23,'tb23body','#2DAA60');
+</script>
+</body>
+</html>
